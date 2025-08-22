@@ -1,3 +1,4 @@
+// App.jsx
 import {
   FaLinkedin,
   FaFilePdf,
@@ -5,12 +6,20 @@ import {
   FaUser,
   FaFolderOpen,
   FaGithub,
+  FaCode,
+  FaPython,
+  FaJsSquare,
+  FaHtml5,
+  FaCss3Alt,
+  FaDatabase,
+  FaMicrosoft,
 } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { SiR, SiSupabase, SiGooglecolab, SiTableau } from "react-icons/si";
+import { TbMathFunction } from "react-icons/tb";
+import { motion } from "framer-motion"; // <- missing before!
 
 const fadeUp = { hidden: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0 } };
 const stagger = { hidden: {}, visible: { transition: { staggerChildren: 0.12 } } };
-
 export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 scroll-smooth font-sans">
@@ -25,7 +34,7 @@ export default function App() {
           {/* Headshot */}
           <motion.img
             variants={fadeUp}
-            src={`${import.meta.env.BASE_URL}ElisaDuan_photo.jpg`} // or avatar.jpg
+            src={`${import.meta.env.BASE_URL}ElisaDuan_photo.jpg`}
             alt="Elisa Duan headshot"
             className="h-32 w-32 md:h-40 md:w-40 rounded-full object-cover ring-2 ring-gray-200 shadow-md mb-6"
           />
@@ -48,9 +57,10 @@ export default function App() {
           </motion.p>
 
           {/* Icons + labels */}
-          <motion.div variants={fadeUp} className="flex space-x-10 text-4xl">
+          <motion.div variants={fadeUp} className="flex text-4xl">
             {[
               { href: "#projects", label: "Projects", Icon: FaFolderOpen },
+              { href: "#skills", label: "Skills", Icon: FaCode }, // NEW
               {
                 href: "https://www.linkedin.com/in/elisa-duan-095534292",
                 label: "LinkedIn",
@@ -70,7 +80,7 @@ export default function App() {
               },
               { href: "#about", label: "About Me", Icon: FaUser },
             ].map(({ href, label, Icon, ext }) => (
-              <div key={label} className="flex flex-col items-center space-y-1">
+              <div key={label} className="flex flex-col items-center space-y-1 mx-4">
                 <a
                   href={href}
                   {...(ext ? { target: "_blank", rel: "noopener noreferrer" } : {})}
@@ -87,42 +97,120 @@ export default function App() {
       </section>
 
       {/* About */}
-<section id="about" className="px-6 py-20 bg-white">
-  <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-    {/* Text */}
-    <div className="md:w-2/3 space-y-6 text-center md:text-left">
-      <h2 className="text-3xl font-bold mb-6">About Me</h2>
+      <section id="about" className="px-6 py-20 bg-white">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+          {/* Text */}
+          <div className="md:w-2/3 space-y-6 text-center md:text-left">
+            <h2 className="text-3xl font-bold mb-6">About Me</h2>
 
-      <p className="text-lg text-gray-700 leading-relaxed">
-    I’m a junior at Northwestern University studying Industrial Engineering and Data Science, 
-    with a certificate in Managerial Analytics from the Kellogg School of Management.
-     My experience spans database design, workflow automation, and data-driven decision-making
-      across research and internships. Over the course of my journey, I’ve built expertise in
-      software and languages such as SQL, Python, R, MATLAB, HTML, CSS, and JavaScript, as well 
-      as platforms like Supabase, Looker Studio, and Microsoft Office. These skills have enabled 
-      me to analyze data, streamline processes, and design interactive dashboards. 
-    I’m always happy to connect, please don’t hesitate to reach out!
-      </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              I’m a junior at Northwestern University studying Industrial Engineering and Data Science,
+              with a certificate in Managerial Analytics from the Kellogg School of Management.
+              My experience spans database design, workflow automation, and data-driven decision-making
+              across research and internships. Over the course of my journey, I’ve built expertise in
+              software and languages such as SQL, Python, R, MATLAB, HTML, CSS, and JavaScript, as well
+              as platforms like Supabase, Looker Studio, and Microsoft Office. These skills have enabled
+              me to analyze data, streamline processes, and design interactive dashboards.
+              I’m always happy to connect, please don’t hesitate to reach out!
+            </p>
 
-      <p className="text-lg text-gray-700 leading-relaxed">
-        Outside of academics, I enjoy learning more about myself and 
-        stepping out of my comfort zone through creative outlets. 
-        Dancing and swimming are two of my favorite activities, 
-        as they keep me active. 
-        I also love listening to music and discovering new genres and artists. 
-        Beyond that, I value spending time with friends and family, 
-        whether it’s exploring new restaurants and shops, traveling, 
-        or simply relaxing and having meaningful conversations together.
-      </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Outside of academics, I enjoy learning more about myself and
+              stepping out of my comfort zone through creative outlets.
+              Dancing and swimming are two of my favorite activities,
+              as they keep me active.
+              I also love listening to music and discovering new genres and artists.
+              Beyond that, I value spending time with friends and family,
+              whether it’s exploring new restaurants and shops, traveling,
+              or simply relaxing and having meaningful conversations together.
+            </p>
+          </div>
+
+          {/* Image */}
+          <div className="md:w-1/3 flex justify-center">
+            <img
+              src={`${import.meta.env.BASE_URL}ElisaDuan_photo.jpg`}
+              alt="Elisa Duan"
+              className="rounded-2xl shadow-lg w-64 h-64 object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Skills */}
+<section id="skills" className="px-6 py-20 bg-gray-50 text-center">
+  <h2 className="text-3xl font-bold mb-6">Skills</h2>
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+    {/* Python */}
+    <div className="flex flex-col items-center space-y-2">
+      <FaPython className="text-4xl text-blue-500" />
+      <span className="text-sm font-medium">Python</span>
     </div>
 
-    {/* Image */}
-    <div className="md:w-1/3 flex justify-center">
-      <img
-        src={`${import.meta.env.BASE_URL}ElisaDuan_photo.jpg`} // replace with your file path
-        alt="Elisa Duan"
-        className="rounded-2xl shadow-lg w-64 h-64 object-cover"
-      />
+    {/* R */}
+    <div className="flex flex-col items-center space-y-2">
+      <SiR className="text-4xl text-sky-600" />
+      <span className="text-sm font-medium">R</span>
+    </div>
+
+    {/* MATLAB */}
+    <div className="flex flex-col items-center space-y-2">
+      <TbMathFunction className="text-4xl text-red-500" />
+      <span className="text-sm font-medium">MATLAB</span>
+    </div>
+
+    {/* SQL */}
+    <div className="flex flex-col items-center space-y-2">
+      <FaDatabase className="text-4xl text-green-600" />
+      <span className="text-sm font-medium">SQL</span>
+    </div>
+
+    {/* HTML */}
+    <div className="flex flex-col items-center space-y-2">
+      <FaHtml5 className="text-4xl text-orange-600" />
+      <span className="text-sm font-medium">HTML</span>
+    </div>
+
+    {/* CSS */}
+    <div className="flex flex-col items-center space-y-2">
+      <FaCss3Alt className="text-4xl text-blue-600" />
+      <span className="text-sm font-medium">CSS</span>
+    </div>
+
+    {/* JavaScript */}
+    <div className="flex flex-col items-center space-y-2">
+      <FaJsSquare className="text-4xl text-yellow-500" />
+      <span className="text-sm font-medium">JavaScript</span>
+    </div>
+
+    {/* Supabase */}
+    <div className="flex flex-col items-center space-y-2">
+      <SiSupabase className="text-4xl text-emerald-600" />
+      <span className="text-sm font-medium">Supabase</span>
+    </div>
+
+    {/* Looker Studio */}
+    <div className="flex flex-col items-center space-y-2">
+      <SiGooglecolab className="text-4xl text-indigo-500" />
+      <span className="text-sm font-medium">Looker Studio</span>
+    </div>
+
+    {/* Microsoft Office */}
+    <div className="flex flex-col items-center space-y-2">
+      <FaMicrosoft className="text-4xl text-blue-700" />
+      <span className="text-sm font-medium">Microsoft Office</span>
+    </div>
+
+    {/* GitHub */}
+    <div className="flex flex-col items-center space-y-2">
+      <FaGithub className="text-4xl text-gray-800" />
+      <span className="text-sm font-medium">GitHub</span>
+    </div>
+
+    {/* Tableau (optional, if you’ve used it) */}
+    <div className="flex flex-col items-center space-y-2">
+      <SiTableau className="text-4xl text-orange-500" />
+      <span className="text-sm font-medium">Tableau</span>
     </div>
   </div>
 </section>
@@ -135,12 +223,14 @@ export default function App() {
           {/* Seismogram Digitization */}
           <div className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition flex flex-col justify-between">
             <div>
-              <h3 className="text-xl font-semibold mb-2"> Bringing Seismological Records to the Digital Age </h3>
+              <h3 className="text-xl font-semibold mb-2">
+                Bringing Seismological Records to the Digital Age
+              </h3>
               <p className="text-gray-700 mb-4">
-                Designed and deployed a relational PostgreSQL database in 
-                Supabase with a web interface (HTML, CSS, JS) hosted on GitHub Pages 
-                to digitize, store, and query thousands of historical seismic records. 
-                Implemented data validation and FOLDS metadata standards to improve 
+                Designed and deployed a relational PostgreSQL database in
+                Supabase with a web interface (HTML, CSS, JS) hosted on GitHub Pages
+                to digitize, store, and query thousands of historical seismic records.
+                Implemented data validation and FOLDS metadata standards to improve
                 accessibility for researchers.
               </p>
             </div>
@@ -155,15 +245,15 @@ export default function App() {
             </a>
           </div>
 
-          {/* Workflow Automation @ MATTER */}
+          {/* Workflow Automation */}
           <div className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition flex flex-col justify-between">
             <div>
               <h3 className="text-xl font-semibold mb-2">Workflow Automation</h3>
               <p className="text-gray-700 mb-4">
-                Automated operational reporting by developing end-to-end data pipelines 
-                with Google Apps Script, Zapier, etc., and integrated sources including room bookings, 
-                visitor activity, and keycard access data. Built interactive Looker Studio 
-                dashboards that provided leadership with real-time visibility into space 
+                Automated operational reporting by developing end-to-end data pipelines
+                with Google Apps Script, Zapier, etc., and integrated sources including room bookings,
+                visitor activity, and keycard access data. Built interactive Looker Studio
+                dashboards that provided leadership with real-time visibility into space
                 utilization and significantly reduced manual reporting effort.
               </p>
             </div>
@@ -175,10 +265,10 @@ export default function App() {
             <div>
               <h3 className="text-xl font-semibold mb-2">Chicago Crime Analysis</h3>
               <p className="text-gray-700 mb-4">
-                Analyzed three up-to-date Chicago crime datasets using Python and Pandas 
-                to identify spatial, demographic, and temporal crime trends. 
-                Created visualizations highlighting high-crime neighborhoods, 
-                demographic disparities, and time-based patterns, generating insights 
+                Analyzed three up-to-date Chicago crime datasets using Python and Pandas
+                to identify spatial, demographic, and temporal crime trends.
+                Created visualizations highlighting high-crime neighborhoods,
+                demographic disparities, and time-based patterns, generating insights
                 to support public safety research and policy discussions.
               </p>
             </div>
