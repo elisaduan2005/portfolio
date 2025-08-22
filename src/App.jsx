@@ -175,7 +175,7 @@ export default function App() {
        {/* Skills */}
 <section
   id="skills"
-  className="px-4 sm:px-6 py-16 md:py-20 relative bg-gradient-to-r from-white/60 via-white/40 to-white/30 backdrop-blur-sm rounded-2xl shadow-md max-w-7xl mx-auto"
+  className="px-4 sm:px-6 py-16 md:py-20 relative bg-gradient-to-r from-white/60 via-white/40 to-white/30 backdrop-blur-sm rounded-2xl shadow-md max-w-6xl sm:max-w-7xl mx-auto"
 >
   <Reveal>
     <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-10 text-center">Skills</h2>
@@ -322,19 +322,19 @@ export default function App() {
           </h3>
 
           <h4 className="text-sm md:text-base font-semibold">Summary</h4>
-          <p className="text-sm md:text-base text-gray-800 mb-2">
+          <p className="text-base md:text-lg text-gray-800 mb-2">
             Built a relational PostgreSQL database in Supabase with a web interface (HTML, CSS, JS)
-            hosted on GitHub Pages to digitize, store, query thousands of historical seismic records.
+            hosted on GitHub Pages to digitize, store, and query thousands of historical seismic records.
           </p>
 
           <h4 className="text-sm md:text-base font-semibold">Methods</h4>
-          <p className="text-sm md:text-base text-gray-800 mb-2">
-            Designed LucidChart schema linking networks, stations, locations, record, imagess; applied FOLDS (Federation of Online Legacy Data for Seismology) metadata
+          <p className="text-base md:text-lg text-gray-800 mb-2">
+            Designed LucidChart schema linking networks, stations, locations, and records; applied FOLDS (Federation of Online Legacy Data for Seismology) metadata
             standards; deployed web GUI.
           </p>
 
           <h4 className="text-sm md:text-base font-semibold">Impact</h4>
-          <p className="text-base md:text-lg text-gray-800 mb-4">
+          <p className="text-base md:text-lg text-gray-800 mb-2">
             Improved data accessibility for researchers at universities and seismological institutes by digitizing analog records.
           </p>
 
@@ -360,19 +360,19 @@ export default function App() {
           <h3 className="text-lg md:text-xl font-semibold mb-3">Workflow Automation</h3>
 
           <h4 className="text-sm md:text-base font-semibold">Summary</h4>
-          <p className="text-sm md:text-base text-gray-800 mb-2">
+          <p className="text-base md:text-lg text-gray-800 mb-2">
             Automated operational reporting by developing pipelines that integrate room bookings, visitor logs, and
             keycard access data into interactive real-time dashboards.
           </p>
 
           <h4 className="text-sm md:text-base font-semibold">Methods</h4>
-          <p className="text-sm md:text-base text-gray-800 mb-2">
-            Built nightly ETL workflows with Google Apps Script, Zapier, etc.; centralized data in Google sheets;
+          <p className="text-base md:text-lg text-gray-800 mb-2">
+            Built daily ETL workflows with Google Apps Script and Zapier; centralized data in Google Sheets;
             built dashboards in Looker Studio.
           </p>
 
           <h4 className="text-sm md:text-base font-semibold">Impact</h4>
-          <p className="text-base md:text-lg text-gray-800">
+          <p className="text-base md:text-lg text-gray-800 mb-2">
             Provided management with real-time visibility into space utilization and significantly reduced manual reporting efforts.
           </p>
         </motion.div>
@@ -394,11 +394,11 @@ export default function App() {
 
           <h4 className="text-sm md:text-base font-semibold">Methods</h4>
           <p className="text-base md:text-lg text-gray-800 mb-2">
-            Cleaned and merged datasets using Python (Pandas, NumPy); aggregated incidents by type of crime, demographics, etc; and created visualizations using libraries such as Matplotlib and Seaborn.
+            Cleaned and merged datasets using Python (Pandas, NumPy); aggregated incidents by type of crime, demographics, etc.; and created visualizations using libraries such as Matplotlib and Seaborn.
           </p>
 
           <h4 className="text-sm md:text-base font-semibold">Impact</h4>
-          <p className="text-base md:text-lg text-gray-800 mb-4">
+          <p className="text-base md:text-lg text-gray-800 mb-2">
             Identified disparities in crime exposure across demographics, time, and neighborhoods; supported public safety
             and policy discussions.
           </p>
@@ -417,8 +417,8 @@ export default function App() {
     </div>
   </motion.div>
 </section>
-      </div>   {/* end overlay */}
-    </div>    
+</div> </div>
   );
 }
+
 
