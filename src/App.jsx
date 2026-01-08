@@ -87,7 +87,7 @@ export default function App() {
                 { href: "#projects", label: "Projects", Icon: FaFolderOpen },
                 { href: "#skills", label: "Skills", Icon: FaCode },
                 { href: "https://www.linkedin.com/in/elisa-duan-095534292", label: "LinkedIn", Icon: FaLinkedin, ext: true },
-                { href: `${import.meta.env.BASE_URL}resume.pdf`, label: "Resume", Icon: FaFilePdf, ext: true },
+                { href: `${import.meta.env.BASE_URL}resume_updated.pdf`, label: "Resume", Icon: FaFilePdf, ext: true },
                 { href: "mailto:elisaduan2027@u.northwestern.edu", label: "Email", Icon: FaEnvelope },
                 { href: "#about", label: "About Me", Icon: FaUser },
               ].map(({ href, label, Icon, ext }) => (
