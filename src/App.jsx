@@ -350,42 +350,6 @@ export default function App() {
         </motion.div>
       </Reveal>
 
-          {/* Project 2 */}
-      <Reveal>
-        <motion.div
-          className="md:col-span-2 rounded-2xl p-6 md:p-7 bg-white/75 backdrop-blur border border-white/50 shadow-sm hover:shadow-lg"
-          whileHover={{ y: -4 }}
-          transition={{ type: "spring", stiffness: 250, damping: 18 }}
-        >
-          <h3 className="text-lg md:text-xl font-semibold mb-3">Chicago Crime Analysis</h3>
-
-          <h4 className="text-sm md:text-base font-semibold">Summary</h4>
-          <p className="text-base md:text-lg text-gray-800 mb-2">
-            Analyzed three Chicago crime datasets to uncover demographic, temporal, and spatial crime patterns.
-          </p>
-
-          <h4 className="text-sm md:text-base font-semibold">Methods</h4>
-          <p className="text-base md:text-lg text-gray-800 mb-2">
-            Cleaned and merged datasets using Python (Pandas, NumPy); aggregated incidents by type of crime, demographics, etc.; and created visualizations using libraries such as Matplotlib and Seaborn.
-          </p>
-
-          <h4 className="text-sm md:text-base font-semibold">Impact</h4>
-          <p className="text-base md:text-lg text-gray-800 mb-2">
-            Identified disparities in crime exposure across demographics, time, and neighborhoods; supported public safety
-            and policy discussions.
-          </p>
-
-          <a
-            href="https://github.com/elisaduan2005/chicago-crime-analysis"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-gray-800 hover:text-blue-600 transition-colors"
-          >
-            <FaGithub className="text-lg" />
-            <span className="text-base">View on GitHub</span>
-          </a>
-        </motion.div>
-      </Reveal>
 
       {/* Project 2 */}
       <Reveal>
@@ -424,46 +388,6 @@ export default function App() {
         </motion.div>
       </Reveal>
 
-    {/* Project 2 */}
-  <Reveal>
-  <motion.div
-    className="md:col-span-2 rounded-2xl p-6 md:p-7 bg-white/75 backdrop-blur border border-white/50 shadow-sm hover:shadow-lg"
-    whileHover={{ y: -4 }}
-    transition={{ type: "spring", stiffness: 250, damping: 18 }}
-  >
-    <h3 className="text-lg md:text-xl font-semibold mb-3">
-      Southern California Housing Price Prediction (CRMLS)
-    </h3>
-
-    <h4 className="text-sm md:text-base font-semibold">Summary</h4>
-    <p className="text-base md:text-lg text-gray-800 mb-2">
-      Collaborated with a team to conduct exploratory data analysis (EDA) on real estate market data to support predictive
-      modeling of housing prices in Southern California.
-    </p>
-
-    <h4 className="text-sm md:text-base font-semibold">Methods</h4>
-    <p className="text-base md:text-lg text-gray-800 mb-2">
-      Developed and evaluated a LightGBM model to predict property closing prices using California Regional Multiple Listing
-      Service (CRMLS) data; compared performance across machine learning models using R², MAPE, and MdAPE.
-    </p>
-
-    <h4 className="text-sm md:text-base font-semibold">Impact</h4>
-    <p className="text-base md:text-lg text-gray-800 mb-2">
-      Built a validated modeling pipeline with clear performance comparisons, enabling informed model selection and improving
-      accuracy in housing price prediction.
-    </p>
-
-    <a
-      href="https://github.com/agrawalreva/idx-exchange-ds34"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 text-gray-800 hover:text-blue-600 transition-colors"
-    >
-      <FaGithub className="text-lg" />
-      <span className="text-base">View on GitHub</span>
-    </a>
-  </motion.div>
-</Reveal>
 
     {/* Project 4 */}
   <Reveal>
