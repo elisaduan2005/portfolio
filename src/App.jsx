@@ -414,7 +414,6 @@ export default function App() {
           </a>
         </motion.div>
       </Reveal>
-    </div>
 
     {/* Project 4 */}
   <Reveal>
@@ -456,7 +455,7 @@ export default function App() {
     </a>
   </motion.div>
 </Reveal>
-
+  </div>
   </motion.div>
 </section>
 </div> </div>
