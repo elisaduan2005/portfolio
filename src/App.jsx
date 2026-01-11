@@ -131,12 +131,12 @@ export default function App() {
         variants={slideInLeft}
       >
         <p>
-          I’m a junior at Northwestern University studying Industrial Engineering and Data Science,
-          with a certificate in Managerial Analytics from the Kellogg School of Management.
+          I’m a junior at Northwestern University double majoring in Industrial Engineering & Management Sciences
+          and Data Science.
           My experience spans relational database design, workflow automation, and building interactive
           dashboards that support data-driven decisions across research and internships.
           I am eager to apply data-science thinking to real-world problems, particularly in analytics,
-          product, or supply chain roles across tech and finance. I’m always happy to connect—please don’t hesitate to reach out!
+          product, or supply chain roles across tech and finance. I’m always happy to connect, please don’t hesitate to reach out!
         </p>
         <p>
           Outside of class, I like expressing myself through creative outlets. Dancing and swimming keep me active,
