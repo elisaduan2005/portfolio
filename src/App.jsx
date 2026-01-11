@@ -364,14 +364,13 @@ export default function App() {
     <h4 className="text-sm md:text-base font-semibold">Summary</h4>
     <p className="text-base md:text-lg text-gray-800 mb-2">
       Conducted exploratory data analysis on Adidas sales data to uncover trends in
-      revenue, operating profit, and sales performance across regions and channels.
+      operating profit, and sales performance across regions and channels.
     </p>
 
     <h4 className="text-sm md:text-base font-semibold">Methods</h4>
     <p className="text-base md:text-lg text-gray-800 mb-2">
-      Cleaned and transformed data using Python (Pandas, NumPy); engineered key
-      performance metrics (sales, profit, margin); and built visualizations to
-      compare performance by geography, product category, and sales method.
+      Cleaned and transformed data using Python (Pandas, NumPy) and built visualizations to
+      compare performance by sales method, geography, and product category.
     </p>
 
     <h4 className="text-sm md:text-base font-semibold">Impact</h4>
