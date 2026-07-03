@@ -192,7 +192,8 @@ export default function App() {
     {[
       { Icon: FaPython, label: "Python", cls: "text-blue-500" },
       { Icon: SiR, label: "R", cls: "text-sky-600" },
-      { Icon: FaDatabase, label: "SQL", cls: "text-green-600" },
+      { Icon: FaDatabase, label: "PostgreSQL", cls: "text-green-600" },
+      { Icon: FaDatabase, label: "Snowflake", cls: "text-blue-500" },
       { Icon: FaHtml5, label: "HTML", cls: "text-orange-600" },
       { Icon: FaCss3Alt, label: "CSS", cls: "text-blue-600" },
       { Icon: FaJsSquare, label: "JavaScript", cls: "text-yellow-500" },
