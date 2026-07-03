@@ -359,25 +359,32 @@ export default function App() {
     transition={{ type: "spring", stiffness: 250, damping: 18 }}
   >
     <h3 className="text-lg md:text-xl font-semibold mb-3">
-      Adidas Sales Analysis
+    Adidas Sales Analysis
     </h3>
 
     <h4 className="text-sm md:text-base font-semibold">Summary</h4>
     <p className="text-base md:text-lg text-gray-800 mb-2">
-      Conducted exploratory data analysis on Adidas sales data to uncover trends in
-      operating profit, and sales performance across regions and channels.
+    Conducted exploratory data analysis and predictive modeling on Adidas sales data
+    to uncover trends in operating profit and sales performance across regions,
+    channels, and product categories.
     </p>
 
     <h4 className="text-sm md:text-base font-semibold">Methods</h4>
     <p className="text-base md:text-lg text-gray-800 mb-2">
-      Cleaned and transformed data using Python (Pandas, NumPy) and built visualizations to
-      compare performance by sales method, geography, and product category.
+    Cleaned and transformed data using Python (Pandas, NumPy), created
+    visualizations to compare performance across sales methods, geographies, and
+    product categories, and built two predictive models using scikit-learn and
+    statsmodels with 10+ features to forecast operating profit. Evaluated model
+    performance using R² and RMSE and conducted statistical inference with
+    p-values, confidence intervals, and joint F-tests.
     </p>
 
     <h4 className="text-sm md:text-base font-semibold">Impact</h4>
     <p className="text-base md:text-lg text-gray-800 mb-2">
-      Identified high-performing regions and channels and generated insights to
-      support strategic inventory decisions and targeted marketing efforts.
+    Identified high-performing regions and sales channels, generated insights to
+    support inventory and marketing decisions, and developed a predictive model
+    achieving an R² of 0.914 while identifying statistically significant drivers
+    of operating profitability.
     </p>
 
     <a
